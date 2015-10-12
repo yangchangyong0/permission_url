@@ -1,0 +1,21 @@
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- =================================全局配置参数=============================== -->
+    <settings>
+        <!-- 延迟加载总开关 -->
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!-- 设置按需加载 -->
+        <setting name="aggressiveLazyLoading" value="false" />
+        <!-- 二级缓存总开关 -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <!--===============================加载mapper====================================-->
+    <mappers>
+        <!--1:通过resource路径导入xml映射（idea必须在resource文件下面）-->
+        <mapper  resource="mapper/ItemsMapper.xml"/>
+        <!--3:通过批量导入package，自动扫描包下面mapper接口 注意：此时class文件必须与想xml文件在一个目录下,同名-->
+        <!--<package name="com.ycy.mybatis.dao"/>-->
+    </mappers>
+</configuration>
