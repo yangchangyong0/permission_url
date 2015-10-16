@@ -9,7 +9,7 @@
 <head><base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>json测试</title>
-<script type="text/javascript" src="<%=basePath%>pages/jsp/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%=basePath%>/js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript">
 
 //请求json响应json

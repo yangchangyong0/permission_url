@@ -13,22 +13,21 @@
 		http://www.springframework.org/schema/tx
 		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd ">
    <!--========================================静态资源==============================================-->
-    <mvc:resources mapping="/js/**" location="pages/jsp/js/"></mvc:resources>
+    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>
+    <mvc:resources mapping="/images/**" location="/images/"></mvc:resources>
+    <mvc:resources mapping="/styles/**" location="/styles/"></mvc:resources>
     <!--========================================拦截器==============================================-->
-    <!--拦截器 -->
+    <!--拦截器 多个拦截器,顺序执行 -->
     <mvc:interceptors>
-        <!--多个拦截器,顺序执行 -->
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <bean class="com.ycy.interceptor.HandlerInterceptor01"></bean>
-        </mvc:interceptor>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <bean class="com.ycy.interceptor.HandlerInterceptor02"></bean>
-        </mvc:interceptor>
+        <!--用户认证权限拦截器-->
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="com.ycy.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+        <!--用户授权权限拦截器-->
+       <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.ycy.interceptor.SysPermissionInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
     <!-- 使用spring组件扫描 -->

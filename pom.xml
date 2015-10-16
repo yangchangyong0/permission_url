@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.ycy.shrio01</groupId>
-  <artifactId>i</artifactId>
+  <groupId>com.ycy.permission_url</groupId>
+  <artifactId>permission_url</artifactId>
   <packaging>war</packaging>
-  <version>1.0-shrio01</version>
+  <version>1.0-permission_url</version>
   <name>spring Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -121,6 +121,33 @@
       <artifactId>jackson-annotations</artifactId>
       <version>2.6.1</version>
     </dependency>
+    <!--======================================shrio=================================================-->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-web</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-ehcache</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-quartz</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>spring01</finalName>
