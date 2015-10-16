@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="shrio01:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/shrio01_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/spring01</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="shrio01" />
+          <element id="module-output" name="permission_url" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.30" />
@@ -35,9 +35,20 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.1" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.2.4" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.2.4" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-ehcache:1.2.4" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-quartz:1.2.4" />
+          <element id="library" level="project" name="Maven: org.opensymphony.quartz:quartz:1.6.1" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="shrio01/web/Web" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/spring01/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="permission_url/web/Web" />
     </root>
   </artifact>
 </component>
