@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="shrio_test:war">
-    <output-path>$PROJECT_DIR$/../shrio_test/target</output-path>
-    <root id="archive" name="shrio_test-1.0-shrio_test.war">
-      <element id="artifact" artifact-name="shrio_test:war exploded" />
-    </root>
-  </artifact>
-</component>

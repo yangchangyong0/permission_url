@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/permission_url.iml" filepath="$PROJECT_DIR$/permission_url.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shrio_01/shrio_01.iml" filepath="$PROJECT_DIR$/../shrio_01/shrio_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/../shrio_test/shrio_test.iml" filepath="$PROJECT_DIR$/../shrio_test/shrio_test.iml" />
     </modules>
   </component>

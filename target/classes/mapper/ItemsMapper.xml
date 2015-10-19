@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.ycy.mapper.ItemsMapper">
 
-<select id="getItemsById" parameterType="map"
+    <select id="getItemsById" parameterType="map"
             resultType="com.ycy.dto.ItemsCustom">
-  SELECT  * from items WHERE  id=#{id}
-</select>
+        SELECT  * from items WHERE  id=#{id}
+    </select>
 
     <select id="findtemsList" parameterType="com.ycy.dto.ItemsCustom"
             resultType="com.ycy.dto.ItemsCustom">
-    SELECT  * from items
-  </select>
+        SELECT  * from items
+    </select>
 
     <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.ycy.dto.ItemsCustom" >
         update items t

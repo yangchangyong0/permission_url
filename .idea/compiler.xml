@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="permission_url" />
         <module name="shrio01" />
+        <module name="shrio_01" />
         <module name="shrio_test" />
         <module name="spring01" />
       </profile>
@@ -31,6 +32,7 @@
     <bytecodeTargetLevel target="1.7">
       <module name="permission_url" target="1.5" />
       <module name="shrio01" target="1.5" />
+      <module name="shrio_01" target="1.5" />
       <module name="shrio_test" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -12,6 +12,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../shrio_test/pom.xml" />
+        <option value="$PROJECT_DIR$/../shrio_01/pom.xml" />
       </list>
     </option>
   </component>
